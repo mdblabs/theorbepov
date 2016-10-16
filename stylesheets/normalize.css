@@ -201,6 +201,7 @@ svg:not(:root) {
  */
 
 figure {
+  text-align: center;
   margin: 1em 40px;
 }
 
