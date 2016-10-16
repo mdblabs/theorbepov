@@ -18,6 +18,13 @@ html {
 
 body {
   margin: 0;
+
+}
+
+p {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: justify;
 }
 
 /* HTML5 display definitions
