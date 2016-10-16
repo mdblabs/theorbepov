@@ -37,7 +37,7 @@
         <p>If you have any comments, you can reach me <a href=https://twitter.com/mdbLabs target="_blank">@mdblabs</a>. Enjoy!</p>
 
       <h3>
-        <a id="3D Design" class="anchor" href="#3d-design" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3D Design
+        <a id="3D Design" class="anchor" href="#3d-design" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3D Design<sup>*</sup>
       </h3>
         <p>Main idea was simple: just make a rotating sphere, holding from a brushless motor, on a base. Main problem on POV systems is how to provide the rotating part power. Normally,
         two solutions are implemented: battery powered or power transmission to the rotating part by any means.</p>
@@ -66,7 +66,92 @@
         </figure>
 
         <p>A pair of arms were designed to hold the LEDs: one for the red ones, and a the other one for the greens. Original idea was to use 3 colors, but that would make the desing very complex. Also, using
-        just two arms will keep the rotating part balanced.</p>
+        just two arms will keep the rotating part balanced. Also, a cylindrical column was included. This column will keep the arms straight during rotation, and will hold a pair of slots. On those slots
+        a 5 mm copper film will be glued, to transmit power to the sphere. On each arm, a pair of spring based carbon brushes will make contact with the copper. An external, screwed ring, will hold everything tight</p>
+
+        <p>Two more small arms were designed to carry a IR sensor, to measure half rotation. Also, on the base, a column with a thin plate will act as optical interrupt.</p>
+        <figure>
+            <img align="center" src="imgs/arms_detail.png">
+            <figcaption > Fig.3-Arms detail.</figcaption>
+        </figure>
+
+        <p>Finally, a control panel and top and lateral panels were included. It has a AC connector, two LEDs (power ON and rotation indicator) and two switches: Power ON/OFF and Rotation ON/OFF.</p>
+        <figure>
+            <img align="center" src="imgs/final_and_panel.png">
+            <figcaption > Fig.4-Final design and control panel.</figcaption>
+        </figure>
+
+        <p><sup>*</sup> CAD design was done using <a href="http://www.autodesk.com/products/fusion-360/overview"  target="_blank">Autodesk Fusion 360.</a>
+
+        <h3>
+            <a id="3D Printing" class="anchor" href="#3d-printing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3D Printing<sup>*</sup>
+        </h3>
+
+        <p>Several prototypes were printed, in order to adjust final design, like sphere or sensor arms. Also, to adjust tolerances for screw holes and assembly joins.</p>
+
+        <p>Little sanding was only necessary on optical switch column, to let the IR sensor pass trought (see Electronics and Lesson Learned), although tolerances for werent good enought and was deprecated.</p>
+
+        <p>List of printed parts is:</p>
+
+        <table class="center">
+            <tr>
+                <th>Part Name</th>
+                <th>STL</th>
+                <th>Needed</th>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td>base.stl</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Arduino and Electronic support</td>
+                <td>electronic_support.stl</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>LEDs rm</td>
+                <td>led_arm.stl</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Motor support</td>
+                <td>main_support.stl</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Control panel and enclosure</td>
+                <td>panel.stl</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Conection ring</td>
+                <td>ring.stl</td>
+                <td>x1</td>
+            </tr>
+            <tr>
+                <td>Sensor arm</td>
+                <td>sensor_arm.stl</td>
+                <td>x2</td>
+            </tr>
+            <tr>
+                <td>Side panels</td>
+                <td>side.stl</td>
+                <td>x3</td>
+            </tr>
+            <tr>
+                <td>Top panels</td>
+                <td>top.stl</td>
+                <td>x2</td>
+            </tr>
+        </table>
+        <p></p>
+        <p>Everything was assemblied using M3 and M4 screws, and nylon nuts (see Assembly). Every piece was printed on black or orange PLA at 210 ºC and 70 mm/s speed.</p>
+
+        <figure>
+            <img align="center" src="imgs/prints.png">
+            <figcaption > Fig.5-Some prints pictures.</figcaption>
+        </figure>
 
 
       <footer class="site-footer">
